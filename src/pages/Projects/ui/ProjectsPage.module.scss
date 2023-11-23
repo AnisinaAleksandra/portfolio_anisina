@@ -1,0 +1,212 @@
+.progects_page {
+  max-width: 1240px;
+  padding: 120px 0 50px 0;
+  margin: 0 auto;
+  .title_of_page {
+    display: block;
+    font-size: var(--font-size-l);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    letter-spacing: 3px;
+    text-align: center;
+    margin-bottom: 3.5rem;
+    position: relative;
+    &::before {
+      content: " ";
+      width: 68px;
+      height: 5px;
+      background-color: var(--secondary-color);
+      display: block;
+      position: relative;
+      bottom: -40px;
+      margin: 0 auto;
+      border-radius: 5px;
+    }
+  }
+  .container_progects_list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    .progect {
+      width: 100%;
+      display: flex;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+      margin-bottom: 40px;
+      .image_of_project {
+        position: relative;
+        img:first-child {
+          position: absolute;
+          width: 392px;
+          top: 30px;
+          height: 240px;
+          left: 52px;
+        }
+        img:last-child {
+          width: 500px;
+        }
+      }
+      .description_of_project {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 300px;
+        h1 {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .progects_page {
+    padding: 50px 0;
+    .container_progects_list {
+      .progect {
+        justify-content: center;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 910px) {
+  .progects_page {
+    .container_progects_list {
+      .progect {
+        justify-content: center;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .progects_page {
+    .container_progects_list {
+      .progect {
+        .image_of_project {
+          img:first-child {
+            width: 372px;
+            top: 28px;
+            height: 226px;
+            left: 47px;
+          }
+          img:last-child {
+            width: 470px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 581px) {
+  .progects_page {
+    .title_of_page {
+      padding-left: 30px;
+    }
+    .container_progects_list {
+      .progect {
+        padding-left: 30px;
+        .image_of_project {
+          img:first-child {
+            width: 292px;
+            top: 22px;
+            height: 177px;
+            left: 37px;
+          }
+          img:last-child {
+            width: 370px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 450px) {
+  .progects_page {
+    .title_of_page {
+      padding-left: 45px;
+    }
+    .container_progects_list {
+      .progect {
+        padding-left: 45px;
+        .image_of_project {
+          img:first-child {
+            width: 213px;
+            top: 16px;
+            height: 129px;
+            left: 28px;
+          }
+          img:last-child {
+            width: 270px;
+          }
+        }
+        .description_of_project {
+          width: 270px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .progects_page {
+    .title_of_page {
+      padding-left: 65px;
+    }
+    .container_progects_list {
+      .progect {
+        padding-left: 65px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .progects_page {
+    .title_of_page {
+      padding-left: 45px;
+    }
+    .container_progects_list {
+      .progect {
+        padding-left: 45px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 345px) {
+  .progects_page {
+    .container_progects_list {
+      .progect {
+        .description_of_project {
+          width: 220px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .progects_page {
+    .container_progects_list {
+      .progect {
+        .image_of_project {
+          img:first-child {
+            width: 197px;
+            top: 14px;
+            height: 120px;
+            left: 26px;
+          }
+          img:last-child {
+            width: 250px;
+          }
+        }
+        .description_of_project {
+          width: 220px;
+        }
+      }
+    }
+  }
+}
