@@ -18,7 +18,9 @@ const AboutPage = () => {
   ];
   return (
     <div className={cls.container} id="about">
-      <div className={cls.title_of_page}>{t("ABOUT_ME")}</div>
+      <div className={cls.title_of_page} data-aos="fade-down">
+        {t("ABOUT_ME")}
+      </div>
       <div className={cls.content_page}>
         <div className={cls.description_part}>
           <div className={cls.who_am_i}>{t("WEB_DEVELOPER")}</div>
@@ -38,7 +40,7 @@ const AboutPage = () => {
           <div className={cls.title_of_skills}>{t("SKILLS")}</div>
           <div className={cls.skills_list}>
             {skillsList.map((skill) => (
-              <div className={cls.skills_item} key={skill}>
+              <div className={cls.skills_item} key={skill} data-aos="fade-down">
                 {skill}
               </div>
             ))}

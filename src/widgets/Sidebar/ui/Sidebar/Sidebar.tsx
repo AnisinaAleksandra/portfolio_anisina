@@ -1,7 +1,7 @@
-import { classNames } from "src/shared/lib/classNames/classNames";
-import cls from "./Sidebar.module.scss";
 import { useTranslation } from "react-i18next";
+import { classNames } from "src/shared/lib/classNames/classNames";
 import { useTheme } from "src/app/providers/ThemeProviders";
+import cls from "./Sidebar.module.scss";
 
 export const Sidebar = () => {
   const { toggleTheme } = useTheme();
