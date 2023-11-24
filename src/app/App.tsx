@@ -1,11 +1,12 @@
 import { Suspense } from "react";
-import "./styles/index.scss";
 import { useTheme } from "./providers/ThemeProviders";
-import { classNames } from "@/shared/lib/classNames/classNames";
 import { Navbar } from "../widgets/Navbar";
 import { Sidebar } from "../widgets/Sidebar";
 import { AppRouter } from "./providers/router";
 import { Footer } from "../widgets/Footer";
+import { classNames } from "../shared/lib/classNames/classNames";
+import "./styles/index.scss";
+// import { classNames } from "src/shared/lib/classNames/classNames";
 
 const App = () => {
   const { theme } = useTheme();

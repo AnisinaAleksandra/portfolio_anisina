@@ -1,11 +1,11 @@
-import { AboutPage } from "@/pages/AboutPage";
+import { AboutPage } from "src/pages/AboutPage";
 import cls from "./MainPage.module.scss";
 import { useTranslation } from "react-i18next";
-import image from "@/shared/assets/icons/main_image.jpeg";
-import { Button, ThemeButton } from "@/shared/ui/Button/Button";
-import { ButtonDownloadСv } from "@/shared/ui/ButtonDownload/ButtonDownload";
-import { ProjectsPage } from "@/pages/Projects";
-import Contact from "@/pages/Contact/ui/Contact";
+import image from "src/shared/assets/icons/main_image.jpeg";
+import { Button, ThemeButton } from "src/shared/ui/Button/Button";
+import { ButtonDownloadСv } from "src/shared/ui/ButtonDownload/ButtonDownload";
+import { ProjectsPage } from "src/pages/Projects";
+import Contact from "src/pages/Contact/ui/Contact";
 const MainPage = () => {
   const { t } = useTranslation("main");
   return (

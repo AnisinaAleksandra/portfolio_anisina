@@ -1,8 +1,8 @@
 import cls from "./ProjectsPage.module.scss";
 import { useTranslation } from "react-i18next";
-import laptop from "@/shared/assets/laptop_screen_transparent.png";
-import backgroundImageProgect from "@/shared/assets/backgroundImageProgect.png";
-import backgroundImageProgect2 from "@/shared/assets/svarka.png";
+import laptop from "src/shared/assets/laptop_screen_transparent.png";
+import backgroundImageProgect from "src/shared/assets/backgroundImageProgect.png";
+import backgroundImageProgect2 from "src/shared/assets/svarka.png";
 
 const ProjectsPage = () => {
   const { t } = useTranslation("projects");

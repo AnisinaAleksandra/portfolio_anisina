@@ -2,9 +2,9 @@ import { useState } from "react";
 import cls from "./Contact.module.scss";
 import { useForm } from "react-hook-form";
 import { useTranslation } from "react-i18next";
-import { sendNotification } from "@/shared/config/utils/telegram";
+import { sendNotification } from "src/shared/config/utils/telegram";
 import { ToastContainer, toast } from "react-toastify";
-import "./ReactToastify.scss";
+import "./from "src/pages.scss";
 
 const Contact = () => {
   const { t } = useTranslation("contact");
@@ -21,7 +21,9 @@ const Contact = () => {
   });
 
   const [messageIsSend, setMessageIsSend] = useState(false);
+  console.log(messageIsSend);
 
+  const message: string = t("successful_message_sending");
   const handleSubmitForm = (data: {
     name: string;
     email: string;
@@ -31,7 +33,7 @@ const Contact = () => {
     sendNotification(textMessage, "html")
       .then((res) => {
         console.log(JSON.parse(res));
-        toast(t("successful_message_sending"), {
+        toast(message, {
           position: "bottom-center",
           autoClose: 5000,
           hideProgressBar: false,
@@ -42,7 +44,7 @@ const Contact = () => {
           theme: "light",
         });
       })
-      .catch((res) => {
+      .catch(() => {
         toast.error("Error", {
           position: "bottom-center",
           autoClose: 5000,
