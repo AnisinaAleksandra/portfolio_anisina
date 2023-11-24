@@ -4,7 +4,7 @@ import { useForm } from "react-hook-form";
 import { useTranslation } from "react-i18next";
 import { sendNotification } from "src/shared/config/utils/telegram";
 import { ToastContainer, toast } from "react-toastify";
-import "./from "src/pages.scss";
+import "./ReactToastify.scss";
 
 const Contact = () => {
   const { t } = useTranslation("contact");
