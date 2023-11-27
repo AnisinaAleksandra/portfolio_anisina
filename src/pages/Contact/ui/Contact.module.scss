@@ -115,10 +115,20 @@
 
 @media screen and (max-width: 410px) {
   .container {
-    padding-left: 60px;
     .form_plus_contacts {
       .contacts_form {
         width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 320pxpx) {
+  .container {
+    padding-left: 57px;
+    .form_plus_contacts {
+      .contacts_form {
+        width: 93%;
       }
     }
   }
