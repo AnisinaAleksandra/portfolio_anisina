@@ -18,7 +18,7 @@ const ProjectsPage = () => {
       id: "svarka",
       image: backgroundImageProgect2,
       title: "Svarka",
-      text: "description_of_project",
+      text: "description_of_project2",
     },
   ];
 
