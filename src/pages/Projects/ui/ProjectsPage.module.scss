@@ -46,6 +46,25 @@
           width: 500px;
         }
       }
+      .image_of_project_mobile {
+        position: relative;
+        img:first-child {
+          position: absolute;
+          z-index: 1;
+          bottom: 57px;
+          right: 85px;
+          width: 94px;
+          height: 165px;
+        }
+        img:last-child {
+          position: relative;
+          bottom: -100px;
+          right: 92px;
+          width: 80px;
+          z-index: 0;
+          height: 155px;
+        }
+      }
       .description_of_project {
         display: flex;
         flex-direction: column;
@@ -59,22 +78,65 @@
   }
 }
 
+@media screen and (max-width: 1140px) {
+  .progects_page {
+    .container_progects_list {
+      .progect {
+        .image_of_project_mobile {
+          img:first-child {
+            bottom: 5px;
+            right: 145px;
+          }
+          img:last-child {
+            bottom: -152px;
+            right: 152px;
+          }
+        }
+      }
+    }
+  }
+}
 @media screen and (max-width: 1024px) {
   .progects_page {
     padding: 50px 0;
     .container_progects_list {
       .progect {
         justify-content: center;
+        .image_of_project_mobile {
+          img:first-child {
+            bottom: 5px;
+            right: 85px;
+          }
+          img:last-child {
+            bottom: -152px;
+            right: 92px;
+          }
+        }
       }
     }
   }
 }
 
-@media screen and (max-width: 910px) {
+@media screen and (max-width: 980px) {
   .progects_page {
     .container_progects_list {
       .progect {
-        justify-content: center;
+        .image_of_project {
+          img:first-child {
+            width: 315px;
+            top: 24px;
+            height: 193px;
+            left: 41px;
+          }
+          img:last-child {
+            width: 400px;
+          }
+        }
+        .image_of_project_mobile {
+          img:last-child {
+            bottom: -89px;
+          }
+        }
       }
     }
   }
@@ -93,6 +155,11 @@
           }
           img:last-child {
             width: 470px;
+          }
+        }
+        .image_of_project_mobile {
+          img:last-child {
+            bottom: -134px;
           }
         }
       }
@@ -119,6 +186,33 @@
             width: 370px;
           }
         }
+        .image_of_project_mobile {
+          img:first-child {
+            right: 73px;
+          }
+          img:last-child {
+            bottom: -70px;
+            right: 80px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 500px) {
+  .progects_page {
+    .container_progects_list {
+      .progect {
+        .image_of_project_mobile {
+          img:first-child {
+            bottom: 125px;
+            left: 290px;
+          }
+          img:last-child {
+            bottom: 124px;
+            left: 297px;
+          }
+        }
       }
     }
   }
@@ -142,6 +236,21 @@
             width: 270px;
           }
         }
+        .image_of_project_mobile {
+          img:first-child {
+            bottom: -17px;
+            right: 59px;
+            left: unset;
+            width: 76px;
+            height: 130px;
+          }
+          img:last-child {
+            bottom: -65px;
+            left: -65px;
+            width: 65px;
+            height: 122px;
+          }
+        }
         .description_of_project {
           width: 270px;
         }
@@ -158,6 +267,22 @@
     .container_progects_list {
       .progect {
         padding-left: 65px;
+        .image_of_project_mobile {
+          position: absolute;
+          img:first-child {
+            bottom: -60px;
+            right: -111px;
+            left: unset;
+            width: 74px;
+            height: 130px;
+          }
+          img:last-child {
+            bottom: -63px;
+            left: 105px;
+            width: 62px;
+            height: 122px;
+          }
+        }
       }
     }
   }
@@ -180,6 +305,16 @@
   .progects_page {
     .container_progects_list {
       .progect {
+        .image_of_project_mobile {
+          img:first-child {
+            bottom: -65px;
+            right: -105px;
+          }
+          img:last-child {
+            bottom: -68px;
+            left: 99px;
+          }
+        }
         .description_of_project {
           width: 220px;
         }

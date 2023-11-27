@@ -1,8 +1,11 @@
 import cls from "./ProjectsPage.module.scss";
 import { useTranslation } from "react-i18next";
 import laptop from "src/shared/assets/laptop_screen_transparent.png";
+import mobile from "src/shared/assets/mobile_screen_transparent.png";
 import backgroundImageProgect from "src/shared/assets/backgroundImageProgect.png";
 import backgroundImageProgect2 from "src/shared/assets/svarka.png";
+import backgroundImageMobile from "src/shared/assets/mobile_btm.png";
+import backgroundImageMobile2 from "src/shared/assets/mobile_svarka.png";
 
 const ProjectsPage = () => {
   const { t } = useTranslation("projects");
@@ -11,12 +14,14 @@ const ProjectsPage = () => {
     {
       id: "btm_electronics",
       image: backgroundImageProgect,
+      imageMobile: backgroundImageMobile,
       title: "BTM Electronics",
       text: "description_of_project",
     },
     {
       id: "svarka",
       image: backgroundImageProgect2,
+      imageMobile: backgroundImageMobile2,
       title: "Svarka",
       text: "description_of_project2",
     },
@@ -35,6 +40,16 @@ const ProjectsPage = () => {
                 <div className={cls.image_of_project} data-aos="flip-left">
                   <img src={project.image} alt="backgroundImageProgect" />
                   <img src={laptop} alt="laptop_screen_transparent" />
+                </div>
+                <div
+                  className={cls.image_of_project_mobile}
+                  data-aos="flip-left"
+                >
+                  <img src={mobile} alt="laptop_screen_mobile_transparent" />
+                  <img
+                    src={project.imageMobile}
+                    alt="backgroundImageMobileProgect"
+                  />
                 </div>
                 <div
                   className={cls.description_of_project}
