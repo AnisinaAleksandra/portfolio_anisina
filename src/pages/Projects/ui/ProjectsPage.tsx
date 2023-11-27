@@ -32,11 +32,14 @@ const ProjectsPage = () => {
           projectList.map(function (project) {
             return (
               <div className={cls.progect} key={project.id}>
-                <div className={cls.image_of_project}>
+                <div className={cls.image_of_project} data-aos="flip-left">
                   <img src={project.image} alt="backgroundImageProgect" />
                   <img src={laptop} alt="laptop_screen_transparent" />
                 </div>
-                <div className={cls.description_of_project}>
+                <div
+                  className={cls.description_of_project}
+                  data-aos="flip-right"
+                >
                   <div className={cls.description_of_project_title}>
                     <h1>{project.title}</h1>
                   </div>

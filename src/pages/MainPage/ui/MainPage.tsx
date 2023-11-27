@@ -4,7 +4,6 @@ import { AboutPage } from "src/pages/AboutPage";
 import cls from "./MainPage.module.scss";
 import { useTranslation } from "react-i18next";
 import image from "src/shared/assets/icons/main_image.jpeg";
-import { Button, ThemeButton } from "src/shared/ui/Button/Button";
 import { ButtonDownloadСv } from "src/shared/ui/ButtonDownload/ButtonDownload";
 import { ProjectsPage } from "src/pages/Projects";
 import Contact from "src/pages/Contact/ui/Contact";
@@ -32,10 +31,10 @@ const MainPage = () => {
 
           <div className={cls.bottom_text}>{t("bottom_text")}</div>
           <div className={cls.buttons_box}>
-            <Button theme={ThemeButton.FILLED}>{t("book_a_call")}</Button>
+            {/* <Button theme={ThemeButton.FILLED}>{t("book_a_call")}</Button> */}
             <ButtonDownloadСv
               className={"download_cv"}
-              text={t("download_C")}
+              text={t("download_CV")}
             />
           </div>
         </div>

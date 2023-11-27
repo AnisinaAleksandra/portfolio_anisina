@@ -14,6 +14,7 @@ export function classNames(
       .filter(([className, value]) => {
         console.log(className);
         Boolean(value);
+        console.log(className);
       })
       .map(([className]) => className),
   ].join(" ");
