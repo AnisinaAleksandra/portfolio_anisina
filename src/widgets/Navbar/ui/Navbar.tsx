@@ -2,7 +2,7 @@ import cls from "./Navbar.module.scss";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-scroll";
 import { useState } from "react";
-
+import logo from "src/shared/assets/icons/logo.png";
 export const Navbar = () => {
   const { t } = useTranslation("navbar");
   const [linksVariant, setLinksVariant] = useState(false);
@@ -12,7 +12,8 @@ export const Navbar = () => {
   return (
     <div className={linksVariant ? cls.navbar_open : cls.navbar}>
       <div className={cls.logo}>
-        <a>Portfolio Anisina</a>
+        <img src={logo}></img>
+        <span>Portfolio Anisina</span>
       </div>
       <div
         className={linksVariant ? cls.links_open : cls.links}

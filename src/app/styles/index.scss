@@ -2,7 +2,10 @@
 @import "variables/global";
 @import "themes/normal";
 @import "themes/dark";
-
+@font-face {
+  font-family: "Museo Sans";
+  src: url("../fonts/museosanscyrl-500.ttf");
+}
 .app {
   font: var(--font-m);
   background: var(--bg-color);
