@@ -1,5 +1,6 @@
 {
   "Projects": "Проекты",
   "description_of_project": "SPA для международной компании по оптовой продаже телефонов и другой электроники \nReact, TypeScript, telegramBot, i18n",
-  "description_of_project2": "SPA для продажи услуг по сварочным работам в Новосибирске \nReact, TypeScript, telegramBot"
+  "description_of_project2": "SPA для продажи услуг по сварочным работам в Новосибирске \nReact, TypeScript, telegramBot",
+  "description_of_project3": "Мой сайт портфолио \nReact, TypeScript, telegramBot, LazyLoading, Suspense, i18n, sass, toastify уведомление"
 }
