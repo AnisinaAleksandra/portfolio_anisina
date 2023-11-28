@@ -15,6 +15,7 @@ const ProjectsPage = () => {
       id: "btm_electronics",
       image: backgroundImageProgect,
       imageMobile: backgroundImageMobile,
+      site: "https://btmelectronics.com",
       title: "BTM Electronics",
       text: "description_of_project",
     },
@@ -22,6 +23,7 @@ const ProjectsPage = () => {
       id: "svarka",
       image: backgroundImageProgect2,
       imageMobile: backgroundImageMobile2,
+      site: "https://svarkaraitkin.ru",
       title: "Svarka",
       text: "description_of_project2",
     },
@@ -56,7 +58,9 @@ const ProjectsPage = () => {
                   data-aos="flip-right"
                 >
                   <div className={cls.description_of_project_title}>
-                    <h1>{project.title}</h1>
+                    <a href={project.site}>
+                      <h1>{project.title}</h1>
+                    </a>
                   </div>
                   <div className={cls.description_of_project_text}>
                     {t(project.text)}

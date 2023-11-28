@@ -70,8 +70,12 @@
         flex-direction: column;
         justify-content: center;
         width: 300px;
-        h1 {
-          font-size: 16px;
+        a {
+          cursor: pointer;
+          color: var(--primary-color);
+          h1 {
+            font-size: 16px;
+          }
         }
       }
     }
