@@ -30,7 +30,7 @@ const AboutPage = () => {
             {t("create")}
             <strong>{t("Projects")} </strong>
             {t("description_text")} {t("subscribe")}
-            <a href="www.linkedin.com/in/aleksandra-anisina-4024551aa">
+            <a href="https://www.linkedin.com/in/aleksandra-anisina">
               LinkedIn
             </a>
             .{t("end")} <strong>{t("contact")}</strong> {t("me")}

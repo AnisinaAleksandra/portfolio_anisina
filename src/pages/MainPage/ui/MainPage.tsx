@@ -15,7 +15,6 @@ const MainPage = () => {
   useEffect(() => {
     AOS.init({
       duration: 1000,
-      // easing: "ease-in-out",
       once: true,
     });
   }, []);
@@ -31,7 +30,6 @@ const MainPage = () => {
 
           <div className={cls.bottom_text}>{t("bottom_text")}</div>
           <div className={cls.buttons_box}>
-            {/* <Button theme={ThemeButton.FILLED}>{t("book_a_call")}</Button> */}
             <ButtonDownloadСv
               className={"download_cv"}
               text={t("download_CV")}

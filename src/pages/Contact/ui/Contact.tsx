@@ -81,7 +81,6 @@ const Contact = () => {
               borderColor: errors.name?.message ? "red" : "#8f8f8f00",
             }}
           ></input>
-          {/* <span className={cls.errorMessage}>{errors.name?.message}</span> */}
           <input
             className={cls.field}
             placeholder={t("enter_your_email")}
@@ -112,14 +111,28 @@ const Contact = () => {
           </button>
         </form>
         <div className={cls.contacts_container}>
-          <div>
-            <span>Email:</span> aleksandraanisinaweb@gmail.com
+          <div className={cls.contacts_card}>
+            <a href="mailto:aleksandraanisinaweb@gmail.com">
+              <div className={cls.title_card}>My email:</div>
+              <div className={cls.text_card}>
+                aleksandraanisinaweb@gmail.com
+              </div>
+            </a>
           </div>
-          <div>
-            <span>WhatsApp:</span> 89133856872
+          <div className={cls.contacts_card}>
+            <a href="https://wa.me/9133856872">
+              <div className={cls.title_card}>My WhatsApp:</div>
+              <div className={cls.text_card}>
+                {" "}
+                <i className="fa fa-whatsapp"></i> 89133856872
+              </div>
+            </a>
           </div>
-          <div>
-            <span>Telegramm:</span> @aleksandra_anisina
+          <div className={cls.contacts_card}>
+            <a href="https://t.me/aleksandra_anisina">
+              <div className={cls.title_card}>My Telegramm:</div>
+              <div className={cls.text_card}>@aleksandra_anisina</div>
+            </a>
           </div>
         </div>
       </div>
