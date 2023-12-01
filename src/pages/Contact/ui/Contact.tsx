@@ -120,11 +120,11 @@ const Contact = () => {
             </a>
           </div>
           <div className={cls.contacts_card}>
-            <a href="https://wa.me/9133856872">
+            <a href="https://wa.me/+79133856872">
               <div className={cls.title_card}>My WhatsApp:</div>
               <div className={cls.text_card}>
                 {" "}
-                <i className="fa fa-whatsapp"></i> 89133856872
+                <i className="fa fa-whatsapp"></i> +79133856872
               </div>
             </a>
           </div>
