@@ -13,8 +13,22 @@ export const Navbar = () => {
     <div className={linksVariant ? cls.navbar_open : cls.navbar}>
       <div className={cls.logo}>
         <img src={logo}></img>
-        <span>Portfolio Anisina</span>
+        {/* <span>Portfolio Anisina</span> */}
+        <div className={cls.container}>
+          <div className={cls.row}>
+            <div
+              className={cls.col_md_12}
+              style={{ textAlign: "center" }}
+            ></div>
+          </div>
+          <div className={cls.row}>
+            <div className={cls.col_md_12} style={{ textAlign: "center" }}>
+              <h3 id={cls.background}>{`${"< Portfolio Anisina />"}`}</h3>
+            </div>
+          </div>
+        </div>
       </div>
+
       <div
         className={linksVariant ? cls.links_open : cls.links}
         onClick={() => setLinksVariant(false)}
