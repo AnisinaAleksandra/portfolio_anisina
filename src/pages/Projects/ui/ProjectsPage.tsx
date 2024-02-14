@@ -5,9 +5,11 @@ import mobile from "src/shared/assets/mobile_screen_transparent.png";
 import backgroundImageProgect from "src/shared/assets/backgroundImageProgect.png";
 import backgroundImageProgect2 from "src/shared/assets/svarka.png";
 import backgroundImageProgect3 from "src/shared/assets/portfolio.png";
+import backgroundImageProgect4 from "src/shared/assets/greneo_project_web.png";
 import backgroundImageMobile from "src/shared/assets/mobile_btm.png";
 import backgroundImageMobile2 from "src/shared/assets/mobile_svarka.png";
 import backgroundImageMobile3 from "src/shared/assets/mobile_portfolio.png";
+import backgroundImageMobile4 from "src/shared/assets/greneo_project_mobile.png";
 
 const ProjectsPage = () => {
   const { t } = useTranslation("projects");
@@ -36,6 +38,14 @@ const ProjectsPage = () => {
       site: "https://portfolio-anisina.vercel.app/",
       title: "Portfolio Anisina",
       text: "description_of_project3",
+    },
+    {
+      id: "portfolio_grineo",
+      image: backgroundImageProgect4,
+      imageMobile: backgroundImageMobile4,
+      site: "https://grineo-cripto.vercel.app/",
+      title: "Greneo",
+      text: "https://www.figma.com/file/DWd7rWPgtyHYvFLoIXxQ32/%5BPublished%5D%5BEN%5D-%C2%ABGrineo%C2%BB-(Copy)?type=design&node-id=576-12073&mode=design&t=6MHTVQ0iPnrZeI0R-0",
     },
   ];
 
