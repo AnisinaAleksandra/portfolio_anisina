@@ -24,6 +24,8 @@
     }
   }
   .container_progects_list {
+    // width: 70%;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -85,6 +87,7 @@
 @media screen and (max-width: 1140px) {
   .progects_page {
     .container_progects_list {
+      width: 80vw;
       .progect {
         .image_of_project_mobile {
           img:first-child {
@@ -109,7 +112,7 @@
         .image_of_project_mobile {
           img:first-child {
             bottom: 5px;
-            right: 85px;
+            right: 15px;
           }
           img:last-child {
             bottom: -152px;
@@ -163,7 +166,37 @@
         }
         .image_of_project_mobile {
           img:last-child {
-            bottom: -134px;
+            bottom: 4px;
+            right: 22px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 710px) {
+  .progects_page {
+    .container_progects_list {
+      .progect {
+        .description_of_project {
+          width: 230px;
+        }
+        .image_of_project {
+          img:first-child {
+            width: 300px;
+            top: 21px;
+            height: 181px;
+            left: 38px;
+          }
+          img:last-child {
+            width: 377px;
+          }
+        }
+        .image_of_project_mobile:not(:last-child) {
+          img:last-child {
+            bottom: 4px;
+            right: 22px;
           }
         }
       }
@@ -181,22 +214,19 @@
         padding-left: 30px;
         .image_of_project {
           img:first-child {
-            width: 292px;
-            top: 22px;
-            height: 177px;
-            left: 37px;
+            width: 236px;
+            top: 17px;
+            height: 145px;
+            left: 31px;
           }
           img:last-child {
-            width: 370px;
+            width: 300px;
           }
         }
         .image_of_project_mobile {
-          img:first-child {
-            right: 73px;
-          }
           img:last-child {
-            bottom: -70px;
-            right: 80px;
+            bottom: 4px;
+            right: 7px;
           }
         }
       }

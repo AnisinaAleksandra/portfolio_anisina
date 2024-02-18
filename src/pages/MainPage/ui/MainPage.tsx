@@ -25,7 +25,7 @@ const MainPage = () => {
         <div className={cls.left_side}>
           <div className={cls.head_text} data-aos="fade-right">
             <span className={cls.orange_text}>{t("orange_text")}</span>
-            
+
             <div className={cls.description_text}>{t("description_text")}</div>
           </div>
 
