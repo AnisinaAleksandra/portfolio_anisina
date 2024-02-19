@@ -2,6 +2,10 @@ import cls from "./ProjectsPage.module.scss";
 import { useTranslation } from "react-i18next";
 import laptop from "src/shared/assets/laptop_screen_transparent.png";
 import mobile from "src/shared/assets/mobile_screen_transparent.png";
+import tenderImageProgect from "src/shared/assets/cardsMobile.jpg";
+import tenderImageMobile from "src/shared/assets/cards.jpg";
+import lkImageProgect from "src/shared/assets/lk.jpg";
+import lkImageMobile from "src/shared/assets/lkMobile.jpeg";
 import backgroundImageProgect from "src/shared/assets/backgroundImageProgect.png";
 import backgroundImageProgect2 from "src/shared/assets/svarka.png";
 import backgroundImageProgect3 from "src/shared/assets/portfolio.png";
@@ -10,7 +14,6 @@ import backgroundImageMobile from "src/shared/assets/mobile_btm.png";
 import backgroundImageMobile2 from "src/shared/assets/mobile_svarka.png";
 import backgroundImageMobile3 from "src/shared/assets/mobile_portfolio.png";
 import backgroundImageMobile4 from "src/shared/assets/greneo_project_mobile.png";
-// import { SLider } from "src/widgets/Slider/SLider";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -20,6 +23,22 @@ const ProjectsPage = () => {
   const { t } = useTranslation("projects");
 
   const projectList = [
+    {
+      id: "Tender_x5Retail",
+      image: tenderImageProgect,
+      imageMobile: tenderImageMobile,
+      site: "#",
+      title: "Tender_X5Retail",
+      text: "X5RetailGroup - Personal account for employees. React/TS/Redux/Sass",
+    },
+    {
+      id: "Lk_x5Retail",
+      image: lkImageProgect,
+      imageMobile: lkImageMobile,
+      site: "#",
+      title: "Lk_X5Retail",
+      text: "X5RetailGroup - Platform for holding tenders. React/TS/Redux/Sass",
+    },
     {
       id: "btm_electronics",
       image: backgroundImageProgect,
