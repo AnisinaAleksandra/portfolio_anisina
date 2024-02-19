@@ -305,6 +305,7 @@
       padding-left: 65px;
     }
     .container_progects_list {
+      width: 94vw;
       .progect {
         padding-left: 25px;
         .image_of_project_mobile {
@@ -345,7 +346,6 @@
 @media screen and (max-width: 345px) {
   .progects_page {
     .container_progects_list {
-      width: 94vw;
       .progect {
         .description_of_project {
           width: 220px;
