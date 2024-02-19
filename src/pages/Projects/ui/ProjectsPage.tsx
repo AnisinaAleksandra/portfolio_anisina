@@ -67,7 +67,7 @@ const ProjectsPage = () => {
             pagination={{
               clickable: true,
             }}
-            style={{ width: "80%" }}
+            // style={{ width: "80%" }}
             modules={[Pagination]}
             className={cls.mySwiper}
           >
