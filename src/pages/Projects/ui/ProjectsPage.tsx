@@ -28,16 +28,24 @@ const ProjectsPage = () => {
       image: tenderImageProgect,
       imageMobile: tenderImageMobile,
       site: "#",
-      title: "Tender_X5Retail",
-      text: "X5RetailGroup - Personal account for employees. React/TS/Redux/Sass",
+      title: "Tender_X5Retail (For internal purposes)",
+      text: "X5 Retail Group - One of biggest retails in Russia. Platform for holding tenders. React/TS/Redux/Sass",
     },
     {
       id: "Lk_x5Retail",
       image: lkImageProgect,
       imageMobile: lkImageMobile,
       site: "#",
-      title: "Lk_X5Retail",
-      text: "X5RetailGroup - Platform for holding tenders. React/TS/Redux/Sass",
+      title: "Lk_X5Retail (For internal purposes)",
+      text: "X5 Retail Group - One of biggest retails in Russia. Personal account for employees. React/TS/Redux/Sass.",
+    },
+    {
+      id: "portfolio_grineo",
+      image: backgroundImageProgect4,
+      imageMobile: backgroundImageMobile4,
+      site: "https://grineo-cripto.vercel.app/",
+      title: "Greneo",
+      text: "grineo-cripto.vercel.app",
     },
     {
       id: "btm_electronics",
@@ -62,14 +70,6 @@ const ProjectsPage = () => {
       site: "https://portfolio-anisina.vercel.app/",
       title: "Portfolio Anisina",
       text: "description_of_project3",
-    },
-    {
-      id: "portfolio_grineo",
-      image: backgroundImageProgect4,
-      imageMobile: backgroundImageMobile4,
-      site: "https://grineo-cripto.vercel.app/",
-      title: "Greneo",
-      text: "grineo-cripto.vercel.app",
     },
   ];
 
@@ -116,9 +116,13 @@ const ProjectsPage = () => {
                       data-aos="flip-right"
                     >
                       <div className={cls.description_of_project_title}>
-                        <a href={project.site}>
-                          <h1>{project.title}</h1>
-                        </a>
+                        {project.site === "#" ? (
+                          <h3>{project.title}</h3>
+                        ) : (
+                          <h3>
+                            <a href={project.site}>{project.title}</a>
+                          </h3>
+                        )}
                       </div>
                       <div className={cls.description_of_project_text}>
                         {t(project.text)}
