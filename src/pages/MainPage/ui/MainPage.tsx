@@ -3,7 +3,7 @@ import "aos/dist/aos.css";
 import { AboutPage } from "src/pages/AboutPage";
 import cls from "./MainPage.module.scss";
 import { useTranslation } from "react-i18next";
-import image from "src/shared/assets/icons/main_image.jpeg";
+import image from "src/shared/assets/icons/main_image.jpg";
 import { ButtonDownloadСv } from "src/shared/ui/ButtonDownload/ButtonDownload";
 import { ProjectsPage } from "src/pages/Projects";
 import Contact from "src/pages/Contact/ui/Contact";
