@@ -1,6 +1,7 @@
 import { classNames } from "src/shared/lib/classNames/classNames";
 import { Button, ThemeButton } from "src/shared/ui/Button/Button";
 import pdfFilePath from "./Aleksandra_Anisina_CV.pdf";
+import pdfFilePathEng from "./AnisinaAAFrontend_CV.pdf";
 
 interface ButtonDownloadProps {
   className?: string;
@@ -9,18 +10,18 @@ interface ButtonDownloadProps {
 
 export const ButtonDownloadСv = ({ className, text }: ButtonDownloadProps) => {
   const handleDownload = () => {
-    fetch(pdfFilePath)
+    const pdfFilePathV =
+      localStorage.getItem("i18nextLng") === "ru"
+        ? pdfFilePath
+        : pdfFilePathEng;
+
+    fetch(pdfFilePathV)
       .then((response) => response.blob())
       .then((blob) => {
         const url = window.URL.createObjectURL(new Blob([blob]));
         const link = document.createElement("a");
         link.href = url;
-        if (localStorage.getItem("i18nextLng") === "ru") {
-          link.setAttribute("download", "Aleksandra_Anisina_CV.pdf");
-        }
-        if (localStorage.getItem("i18nextLng") === "en") {
-          link.setAttribute("download", "AnisinaAAFrontend_CV.pdf");
-        }
+        link.setAttribute("download", "Aleksandra_Anisina_CV.pdf");
         document.body.appendChild(link);
         link.click();
         if (link.parentNode) link.parentNode.removeChild(link);
