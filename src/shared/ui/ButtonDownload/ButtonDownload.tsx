@@ -15,7 +15,14 @@ export const ButtonDownloadСv = ({ className, text }: ButtonDownloadProps) => {
         const url = window.URL.createObjectURL(new Blob([blob]));
         const link = document.createElement("a");
         link.href = url;
-        link.setAttribute("download", "Aleksandra_Anisina_CV.pdf");
+        console.log(localStorage.getItem("i18nextLng"));
+
+        if (localStorage.getItem("i18nextLng") === "ru") {
+          link.setAttribute("download", "Aleksandra_Anisina_CV.pdf");
+        }
+        if (localStorage.getItem("i18nextLng") !== "ru") {
+          link.setAttribute("download", "AnisinaAAFrontend_CV.pdf");
+        }
         document.body.appendChild(link);
         link.click();
         if (link.parentNode) link.parentNode.removeChild(link);
